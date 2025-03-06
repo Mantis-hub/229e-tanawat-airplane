@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
+  m_SkyboxMaterial: {fileID: 2100000, guid: fa95802f80bd745cfb5e9c89f7e22341, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -206,11 +206,11 @@ Transform:
   m_GameObject: {fileID: 330585543}
   serializedVersion: 2
   m_LocalRotation: {x: 0.11486984, y: -0, z: -0, w: 0.99338055}
-  m_LocalPosition: {x: -0.22, y: 10.51, z: -63.02}
+  m_LocalPosition: {x: -0.030000001, y: 9.570001, z: -21.250458}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1668078103}
   m_LocalEulerAnglesHint: {x: 13.192, y: 0, z: 0}
 --- !u!114 &330585547
 MonoBehaviour:
@@ -567,6 +567,11 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!4 &1668078103 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4882781291406988407, guid: d8b762e102429004ba6884d406594a11, type: 3}
+  m_PrefabInstance: {fileID: 1952835591}
+  m_PrefabAsset: {fileID: 0}
 --- !u!65 &1668078104
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -588,6 +593,26 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 14.391712, y: 5.432301, z: 22.072279}
   m_Center: {x: 0.10252404, y: 2.2161505, z: 0.68228817}
+--- !u!114 &1668078105
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1668078100}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53fd32d02cb070941afd729c8c287f5d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rb: {fileID: 0}
+  enginePower: 20
+  liftBooster: 0.5
+  drag: 0.001
+  angulerDrag: 0.001
+  yawPower: 50
+  pitchPower: 50
+  rollPower: 30
 --- !u!1001 &1952835591
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -642,7 +667,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 4882781291406988407, guid: d8b762e102429004ba6884d406594a11, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 330585546}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 5226655080229162701, guid: d8b762e102429004ba6884d406594a11, type: 3}
       insertIndex: -1
@@ -650,12 +678,14 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 5226655080229162701, guid: d8b762e102429004ba6884d406594a11, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1668078104}
+    - targetCorrespondingSourceObject: {fileID: 5226655080229162701, guid: d8b762e102429004ba6884d406594a11, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1668078105}
   m_SourcePrefab: {fileID: 100100000, guid: d8b762e102429004ba6884d406594a11, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
-  - {fileID: 330585546}
   - {fileID: 410087041}
   - {fileID: 832575519}
   - {fileID: 1186905528}
